@@ -1,4 +1,4 @@
-name: Test and publish to branch
+name: On Pull Request
 
 # On pull_request, we:
 # * always publish to charmhub at latest/edge/branchname
@@ -21,3 +21,4 @@ jobs:
     uses: ./.github/workflows/publish.yaml
     secrets:
       CHARMCRAFT_CREDENTIALS: "${{ secrets.CHARMCRAFT_CREDENTIALS }}"
+
